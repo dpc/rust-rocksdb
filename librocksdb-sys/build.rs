@@ -358,7 +358,7 @@ fn main() {
         } else if target.contains("linux") {
             if target.contains("musl") {
                 println!("cargo:rustc-link-lib=static=stdc++");
-            else {
+            } else {
                 println!("cargo:rustc-link-lib=dylib=stdc++");
             }
         }
